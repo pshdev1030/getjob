@@ -12,7 +12,7 @@
 }
 
 h1 {
-  margin-bottom: 4px;
+  margin-bottom: 40px;
   font-family: sans-serif;
 }
 
@@ -31,13 +31,15 @@ h1 {
   left: 0;
   right: 0;
   bottom: 0;
+  /* slider로 덮음*/
   background-color: #ccc;
   transition: 0.4s;
   border-radius: 34px;
 }
-.switch input {
+
+/* .switch input {
   display: none;
-}
+} */
 
 .slider:before {
   position: absolute;
@@ -50,10 +52,12 @@ h1 {
   transition: 0.4s;
   border-radius: 50px;
 }
+
 input:checked + .slider {
   background-color: #ff278c;
 }
-
+/*
 input:checked + .slider:before {
   transform: translateX(50px);
 }
+*/
